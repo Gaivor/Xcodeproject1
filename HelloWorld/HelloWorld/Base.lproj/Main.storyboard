@@ -17,36 +17,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpZ-QX-3sS">
-                                <rect key="frame" x="20" y="794" width="100" height="68"/>
+                                <rect key="frame" x="87" y="794" width="100" height="68"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="RRa-Ns-yqe"/>
-                                    <constraint firstAttribute="width" constant="100" id="fl1-Qu-yd9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="KTo-o4-jBF"/>
+                                    <constraint firstAttribute="height" constant="68" id="shg-QG-Az4"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-jD-57e">
-                                <rect key="frame" x="294" y="44" width="100" height="68"/>
+                                <rect key="frame" x="227" y="794" width="100" height="68"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="cn2-yI-vKj"/>
-                                    <constraint firstAttribute="height" constant="68" id="rnX-Yo-X12"/>
+                                    <constraint firstAttribute="height" constant="68" id="dfw-bQ-HTH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="sEL-Lk-cnB"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBb-mC-CPI">
+                                <rect key="frame" x="87" y="595.5" width="240" height="148.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dBb-mC-CPI" secondAttribute="height" multiplier="207:128" id="6DF-aV-r3E"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="fKS-jD-57e" secondAttribute="bottom" constant="750" id="TZm-qc-TYJ"/>
-                            <constraint firstItem="tpZ-QX-3sS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cS9-ZA-TMv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tpZ-QX-3sS" secondAttribute="bottom" id="dmm-SK-kbM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fKS-jD-57e" secondAttribute="trailing" constant="20" id="pQf-Jd-SIa"/>
-                            <constraint firstItem="fKS-jD-57e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sx5-WC-Y9k"/>
+                            <constraint firstItem="dBb-mC-CPI" firstAttribute="leading" secondItem="tpZ-QX-3sS" secondAttribute="leading" id="1KV-5o-cDk"/>
+                            <constraint firstItem="dBb-mC-CPI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KW8-2h-t8Z"/>
+                            <constraint firstItem="tpZ-QX-3sS" firstAttribute="top" secondItem="dBb-mC-CPI" secondAttribute="bottom" constant="50" id="LHk-ey-7my"/>
+                            <constraint firstItem="tpZ-QX-3sS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="YPY-eY-8Id"/>
+                            <constraint firstItem="dBb-mC-CPI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="d9K-lw-dic"/>
+                            <constraint firstItem="fKS-jD-57e" firstAttribute="leading" secondItem="tpZ-QX-3sS" secondAttribute="trailing" constant="40" id="g0u-0e-PVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fKS-jD-57e" secondAttribute="trailing" constant="87" id="qOJ-aT-Zod"/>
+                            <constraint firstItem="fKS-jD-57e" firstAttribute="height" secondItem="tpZ-QX-3sS" secondAttribute="height" id="s6R-AM-Ijb"/>
+                            <constraint firstItem="fKS-jD-57e" firstAttribute="width" secondItem="tpZ-QX-3sS" secondAttribute="width" multiplier="1.01" constant="-1" id="sr1-70-3xr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fKS-jD-57e" secondAttribute="bottom" id="ueT-hS-fkm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tpZ-QX-3sS" secondAttribute="bottom" id="zSq-vx-ZnW"/>
                         </constraints>
                     </view>
                 </viewController>
